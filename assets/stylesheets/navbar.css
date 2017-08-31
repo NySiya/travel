@@ -1,0 +1,29 @@
+nav.nav-menu {
+  height: 80px;
+  background-color: #e53935;
+  border-color: #e53935;
+  border-radius: 0;
+}
+
+#navbar-collapse-menu {
+  margin-top: 15px;
+}
+
+#navbar-collapse-menu li.active a {
+  background-color: initial;
+  color: #fff;
+  font-weight: 500;
+}
+
+#navbar-collapse-menu li a:hover {
+  color: #fff;
+}
+
+#navbar-collapse-menu li a {
+  color: #c8c7c7;
+}
+
+.logo img {
+  max-height: 100px;
+  margin-top: -15px;
+}

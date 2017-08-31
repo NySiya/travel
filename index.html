@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>UAT Air</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/stylesheets/index.css">
+  <link rel="stylesheet" href="assets/stylesheets/navbar.css">
+  <link rel="stylesheet" href="assets/stylesheets/slider.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c1e61712bd.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js">
+
+  </script>
+
+  <script src="assets/javascripts/index.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top nav-menu">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#">
+          <img alt="Brand" src="images/logos/logo-placeholder.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <section id="air-search">
+      <section id="slider">
+        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/sliders/slide1.jpg" alt="slide1">
+            </div>
+            <div class="item">
+              <img src="images/sliders/slide2.jpg" alt="slide2">
+            </div>
+            <div class="item">
+              <img src="images/sliders/slide3.jpg" alt="slide3">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="air-search-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <form>
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <span class="flight-search-title">Flight Search</span>
+                  </div>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="tripType" id="return-trip" value="return trip">
+                    Return Trip
+                  </label>
+                  <label>
+                    <input type="radio" name="tripType" id="one-way" value="one way">
+                    One Way
+                  </label>
+                </div>
+                <div class="form-group form-group-sm">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 custom-col">
+                      <label class="col-xs-12 control-label" for="destination-from">From</label>
+                      <div class="col-xs-12">
+                        <input class="form-control" type="text" id="destination-from" placeholder="Phnom Penh">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 custom-col">
+                      <label class="col-xs-12 control-label" for="destination-to">To</label>
+                      <div class="col-xs-12">
+                        <input class="form-control" type="text" id="destination-to" placeholder="England">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-group-sm">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 custom-col">
+                      <label class="col-xs-12 control-label" for="departure-date">Departure Date</label>
+                      <div class="col-xs-12">
+                        <input class="form-control" type="text" id="departure-date">
+
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 custom-col">
+                      <label class="col-xs-12 control-label" for="return-date">Return Date</label>
+                      <div class="col-xs-12">
+                        <input class="form-control" type="text" id="return-date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-group-sm">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label for="adultSelect">Adult</label>
+                          <select id="adultSelect" class="form-control input-sm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-6">
+                          <label for="childSelect">Child</label>
+                          <select id="childSelect" class="form-control input-sm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label for="infantSelect">Infant</label>
+                          <select id="infantSelect" class="form-control input-sm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-6">
+                          <label for="classSelect">Class</label>
+                          <select id="classSelect" class="form-control input-sm">
+                            <option value="economy">Economy</option>
+                            <option value="premium economy">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <button type="submit" class="btn btn-danger btn-submit">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="special-promotion">
+      <div class="container title-wrapper">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <span class="special-promotion-title">Special Promotion</span>
+          </div>
+        </div>
+      </div>
+      <div id="carousel-special-promotion" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-special-promotion" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-special-promotion" data-slide-to="1"></li>
+          <li data-target="#carousel-special-promotion" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/special-promotions/img1.jpg" alt="img1">
+            <div class="carousel-caption">
+              <h3>Maldive Vocation Packages</h3>
+              <h5>july <b>19th</b> to july <b>26th</b></h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/special-promotions/img2.jpeg" alt="img2">
+            <div class="carousel-caption">
+              <h3>Rome, Italy, the city of romantic, Vocation Packages</h3>
+              <h5>july <b>19th</b> to july <b>26th</b></h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/special-promotions/img3.jpg" alt="img3">
+            <div class="carousel-caption">
+              <h3>Amsterdam Vocation Packages</h3>
+              <h5>july <b>19th</b> to july <b>26th</b></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tour-recommendation">
+      <div class="container title-wrapper">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <span class="tour-recommendation-title">Tour Recommendation</span>
+          </div>
+        </div>
+      </div>
+      <section id="gallery">
+        <div class="row custom-row">
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_1.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>Orlando Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_2.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>Sihanoukville Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_3.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>Maldive Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_4.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>Greek Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_5.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>Italy Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 custom-col">
+            <div class="photo-block">
+              <img src="images/tour-recommendations/photo_6.jpg" alt="" class="img-responsive">
+              <div class="vertical-align">
+                <div class="photo-title">
+                  <h3>England Trip</h3>
+                  <h5 class="delay-1">Air/3 Nights</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+  <section id="footer">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">Contact Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-phone"></i>
+                +855 (0) xx xxx xxx
+              </li>
+              <li>
+                <a href="mailto:example@example.com">
+                  <i class="fa fa-envelope"></i>
+                  example@example.com
+                </a>
+              </li>
+              <li class="address-li">
+                <i class="fa fa-home"></i>
+                Phnom Penh, Cambodia
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">About</h4>
+            <ul class="navigation">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut aliquip ex ea commodo consequat.
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">More Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
