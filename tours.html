@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AngkorLand - Tours</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/stylesheets/custom_range.css">
+  <link rel="stylesheet" href="assets/stylesheets/index.css">
+  <link rel="stylesheet" href="assets/stylesheets/navbar.css">
+  <link rel="stylesheet" href="assets/stylesheets/slider.css">
+  <link rel="stylesheet" href="assets/stylesheets/tours.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c1e61712bd.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/javascripts/index.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top nav-menu">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#">
+          <img alt="Brand" src="images/logos/logo-placeholder.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="tours.html">Tour</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <section id="tour-packages">
+      <div class="title-with-banner">
+        <img src="images/tours/london_city_bg.jpeg" alt="" class="img-banner">
+        <div class="title text-center">
+          <span>Tour Packages</span>
+        </div>
+      </div>
+      <section id="tour-listing">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="filter">
+                    <span>Filter By: </span>
+                  </div>
+                </div>
+                <div class="col-xs-12 departure-column">
+                  <div class="panel-group departure-panel" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h3 class="panel-title accordion-toggle"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" >
+                          Departure date
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                November 2017
+                                <span class="tour-number">(697)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                December 2017
+                                <span class="tour-number">(863)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                January 2018
+                                <span class="tour-number">(637)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                February 2018
+                                <span class="tour-number">(692)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                March 2018
+                                <span class="tour-number">(1341)</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 duration-column">
+                  <div class="panel-group duration-panel" id="duration-panel" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingDuration">
+                        <h3 class="panel-title accordion-toggle"  data-toggle="collapse" data-parent="#duration-panel" href="#bodyDuration"  aria-expanded="true" aria-controls="bodyDuration" >
+                          Duration(days)
+                        </h3>
+                      </div>
+                      <div id="bodyDuration" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingDuration">
+                        <div class="panel-body">
+                          <form class="duration-form">
+                            <div class="form-group">
+                              <div class="input-group">
+                                <input type="range" min="0" max="60" value="0" step="1" name="duration" onchange="range.value=value" class="range-input">
+                                <div class="input-group-addon">
+                                  <output id="range">0</output>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 country-column">
+                  <div class="panel-group country-panel" id="country" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingCountry">
+                        <h3 class="panel-title accordion-toggle"  data-toggle="collapse" data-parent="#country" href="#collapseCountry"  aria-expanded="true" aria-controls="collapseCountry" >
+                          Country Recommended
+                        </h3>
+                      </div>
+                      <div id="collapseCountry" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingCountry">
+                        <div class="panel-body">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                Cambodia
+                                <span class="tour-number">(697)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                France
+                                <span class="tour-number">(863)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                Italy
+                                <span class="tour-number">(637)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                Switzeland
+                                <span class="tour-number">(692)</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                Netherlands
+                                <span class="tour-number">(1341)</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-9">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="thumbnail">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4">
+                        <div id="tour-packages-1" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#tour-packages-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#tour-packages-1" data-slide-to="1"></li>
+                            <li data-target="#tour-packages-1" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner tour-carousel" role="listbox">
+                            <div class="item active">
+                              <img src="images/special-promotions/img1.jpg" alt="img1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                              <img src="images/special-promotions/img2.jpeg" alt="img2" class="img-responsive">
+                            </div>
+                            <div class="item">
+                              <img src="images/special-promotions/img3.jpg" alt="img3" class="img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-md-5">
+                        <div class="title">
+                          <a href="#">13 Days in United States of America</a>
+                        </div>
+                        <div class="comment">
+                          "We had a wonderful time on the Intrepid tour. Our guide Chad was really pleasant..."
+                        </div>
+                        <div class="tour-detail">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Destinations
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              11 destinations in USA
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Start/End in
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Las Vegas / Los Angles
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Ages Range
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              15 to 70 year olds
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Accommodation
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Hotel, Lodge, Temple, Motel
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Transport
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Private Vehicle
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Operator
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              World Pop
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <div class="package-cost text-center">
+                          <span class="label label-danger cost-label">Only $ 1, 250</span>
+                        </div>
+                        <div class="cost-per-day text-center">
+                          <span class="package-days">13 days</span>
+                          <br>
+                          <span class="package-per-day">$97/day</span>
+                        </div>
+                        <div class="available-spaces">
+                          <div class="row">
+                            <div class="col-xs-5">
+                              1 Nov 2017
+                            </div>
+                            <div class="col-xs-7">
+                              5 spaces left
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-5">
+                              23 Dec 2017
+                            </div>
+                            <div class="col-xs-7">
+                              10+ spaces left
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-5">
+                              1 Jan 2017
+                            </div>
+                            <div class="col-xs-7">
+                              10+ spaces left
+                            </div>
+                          </div>
+                        </div>
+                        <div class="view-detail text-center">
+                          <div class="btn-view">
+                            <a class="btn btn-info btn-sm" href="tour_detail.html" role="button">View More</a>
+                          </div>
+                          <div class="btn-download">
+                            <a class="btn btn-info btn-sm" href="#" role="button">Download Brochure</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="thumbnail">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4">
+                        <div id="tour-packages-2" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#tour-packages-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#tour-packages-2" data-slide-to="1"></li>
+                            <li data-target="#tour-packages-2" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner tour-carousel" role="listbox">
+                            <div class="item active">
+                              <img src="images/special-promotions/img1.jpg" alt="img1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                              <img src="images/special-promotions/img2.jpeg" alt="img2" class="img-responsive">
+                            </div>
+                            <div class="item">
+                              <img src="images/special-promotions/img3.jpg" alt="img3" class="img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-md-5">
+                        <div class="title">
+                          <a href="#">Europe Escape - 12 Days</a>
+                        </div>
+                        <div class="comment">
+                          "I just want to say thank you to Expat Explore for an awesome tour! Ben the tour guides..."
+                        </div>
+                        <div class="tour-detail">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Destinations
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              16 destinations in 9 countries
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Start/End in
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              London / London
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Ages Range
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              10 to 90 year olds
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Accommodation
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Hotel
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Transport
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Coach / Bus
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-5 tour-detail-header">
+                              Operator
+                            </div>
+                            <div class="col-xs-12 col-sm-7 tour-detail-info">
+                              Expat Explore Travel
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <div class="package-cost text-center">
+                          <span class="label label-danger cost-label">Only $ 1, 465</span>
+                        </div>
+                        <div class="cost-per-day text-center">
+                          <span class="package-days">12 days</span>
+                          <br>
+                          <span class="package-per-day">$122/day</span>
+                        </div>
+                        <div class="available-spaces">
+                          <div class="row">
+                            <div class="col-xs-5">
+                              27 Nov 2017
+                            </div>
+                            <div class="col-xs-7">
+                              5 spaces left
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-5">
+                              14 Jan 2017
+                            </div>
+                            <div class="col-xs-7">
+                              10+ spaces left
+                            </div>
+                          </div>
+                        </div>
+                        <div class="view-detail text-center">
+                          <div class="btn-view">
+                            <a class="btn btn-info btn-sm" href="tour_detail.html" role="button">View More</a>
+                          </div>
+                          <div class="btn-download">
+                            <a class="btn btn-info btn-sm" href="#" role="button">Download Brochure</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+  <section id="footer">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">Contact Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-phone"></i>
+                +855 (0) xx xxx xxx
+              </li>
+              <li>
+                <a href="mailto:example@example.com">
+                  <i class="fa fa-envelope"></i>
+                  example@example.com
+                </a>
+              </li>
+              <li class="address-li">
+                <i class="fa fa-home"></i>
+                Phnom Penh, Cambodia
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">About</h4>
+            <ul class="navigation">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut aliquip ex ea commodo consequat.
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">More Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

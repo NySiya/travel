@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AngkorLand - Tours</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/stylesheets/index.css">
+  <link rel="stylesheet" href="assets/stylesheets/navbar.css">
+  <link rel="stylesheet" href="assets/stylesheets/slider.css">
+  <link rel="stylesheet" href="assets/stylesheets/tour_detail.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c1e61712bd.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/javascripts/index.js"></script>
+  <script src="assets/javascripts/tour_detail.js"></script>
+</head>
+<body data-spy="scroll" data-target="#menu-scroll">
+  <nav class="navbar navbar-default nav-menu">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#">
+          <img alt="Brand" src="images/logos/logo-placeholder.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="tours.html">Tour</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <section id="tour-introduction">
+      <div class="title-with-banner">
+        <img src="images/tours/london_city_bg.jpeg" alt="" class="img-banner">
+        <div class="title text-center">
+          <span>13 Days in United States of America</span>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row tour-introduction-row">
+          <div class="col-xs-12 col-md-8">
+            <div id="tour-gallery" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#tour-gallery" data-slide-to="0" class="active"></li>
+                <li data-target="#tour-gallery" data-slide-to="1"></li>
+                <li data-target="#tour-gallery" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner tour-carousel" role="listbox">
+                <div class="item active">
+                  <img src="images/special-promotions/img1.jpg" alt="img1" class="img-responsive">
+                </div>
+                <div class="item">
+                  <img src="images/special-promotions/img2.jpeg" alt="img2" class="img-responsive">
+                </div>
+                <div class="item">
+                  <img src="images/special-promotions/img3.jpg" alt="img3" class="img-responsive">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#tour-gallery" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#tour-gallery" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="package-cost text-center">
+              <span class="label label-danger cost-label">Only $ 1, 250</span>
+            </div>
+            <div class="cost-per-day text-center">
+              <span class="package-days">13 days</span>
+              <br>
+              <span class="package-per-day">$97/day</span>
+            </div>
+            <div class="available-spaces">
+              <div class="row">
+                <div class="col-xs-5">
+                  1 Nov 2017
+                </div>
+                <div class="col-xs-7">
+                  5 spaces left
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">
+                  23 Dec 2017
+                </div>
+                <div class="col-xs-7">
+                  10+ spaces left
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">
+                  1 Jan 2017
+                </div>
+                <div class="col-xs-7">
+                  10+ spaces left
+                </div>
+              </div>
+            </div>
+            <div class="view-detail text-center">
+              <div class="btn-view">
+                <a class="btn btn-info btn-sm" href="#" role="button">Book This Package</a>
+              </div>
+              <div class="btn-download">
+                <a class="btn btn-info btn-sm" href="#" role="button">Download Brochure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tour-menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="floating-menu">
+              <div class="navbar" id="menu-scroll">
+                <ul role="tablist" class="nav nav-pills nav-justified thumbnail">
+                  <li role="presentation">
+                    <a href='#highlights'><span>Highlights</span></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#itinery"><span>Itinery</span></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#video"><span>Video</span></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#booking"><span>Booking</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="highlights">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="thumbnail">
+              <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="title">
+                        <span>Highlights</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <ul class="list-unstyled note-list">
+                        <li>
+                          <i class="fa fa-check-square-o"></i>
+                          <span class="highlight-note">Visit the famous Notre Dame</span>
+                        </li>
+                        <li>
+                          <i class="fa fa-check-square-o"></i>
+                          <span class="highlight-note">Stop at the Leaning Tower of Pisa</span>
+                        </li>
+                        <li>
+                          <i class="fa fa-check-square-o"></i>
+                          <span class="highlight-note">See Michelangelo’s masterpieces</span>
+                        </li>
+                        <li>
+                          <i class="fa fa-check-square-o"></i>
+                          <span class="highlight-note">Explore Amsterdam's Red Light District</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                  <img src="images/highlights_note/tour_map.png" class="img-thumbnail img-responsive">
+                </div>
+              </div>
+              <hr />
+              <div class="tour-detail">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 tour-detail-header">
+                        AGE RANGE
+                      </div>
+                      <div class="col-xs-12 col-sm-7 tour-detail-info">
+                        10 to 90 year olds
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 tour-detail-header">
+                        ACCOMMODATION
+                      </div>
+                      <div class="col-xs-12 col-sm-7 tour-detail-info">
+                        Hotel
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 tour-detail-header">
+                        MAX GROUP SIZE
+                      </div>
+                      <div class="col-xs-12 col-sm-7 tour-detail-info">
+                        50
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 tour-detail-header">
+                        TRANSPORTATION
+                      </div>
+                      <div class="col-xs-12 col-sm-7 tour-detail-info">
+                        Coach / Bus
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="tour-summary">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p class="text-justify">
+                      Start and end in London! With the coach/bus tour Europe Escape - 12 Days, you have a 12 day tour package taking you through London, England and 14 other destinations in Europe. Europe Escape - 12 Days includes accommodation as well as an expert guide, meals, transport and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="itinery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="thumbnail">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="title">
+                        <span>Itinerary</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="view-detail text-right">
+                        <div class="btn-download">
+                          <a class="btn btn-info" href="#" role="button">Download Brochure</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="panel-group introduction-panel" id="introduction" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingIntro">
+                        <h3 class="panel-title accordion-toggle" data-toggle="collapse" data-parent="#introduction" href="#introBody" aria-expanded="true" aria-controls="introBody">Introduction</h3>
+                      </div>
+                      <div id="introBody" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingIntro">
+                        <div class="panel-body">
+                          The Europe Escape is the most popular choice of our European tours, covering 8 countries and some of the best vacation spots in Europe, including Paris, the Swiss Alps, Florence, Rome, Venice, Munich and Amsterdam!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="panel-group each-panel" id="day1" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingDay1">
+                        <h3 class="panel-title accordion-toggle" data-toggle="collapse" data-parent="#day1" href="#day1Body" aria-expanded="true" aria-controls="day1Body">Day 1: London - Paris</h3>
+                      </div>
+                      <div id="day1Body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingDay1">
+                        <div class="panel-body">
+                          Welcome to your 12 day Europe tour! Leaving London behind us, we make our way to Paris, crossing the English Channel and arriving in the ‘City of Lights’ in the afternoon. We'll take you on a driving tour of the French capital; get your cameras ready - you’ll be seeing some of the city’s most treasured landmarks, including the Eiffel Tower, Notre Dame and the Arc de Triomphe!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="panel-group each-panel" id="day2" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingDay2">
+                        <h3 class="panel-title accordion-toggle" data-toggle="collapse" data-parent="#day2" href="#day2Body" aria-expanded="true" aria-controls="day2Body">Day 2: Paris - Free day</h3>
+                      </div>
+                      <div id="day2Body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingDay2">
+                        <div class="panel-body">
+                          The wonderful thing about Paris, is that it there is so much to experience, regardless of the time of day, or season. The Seine River is the backbone of the capital, and flows through the heart of the city.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="thumbnail">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="title">
+                    <span>Video</span>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/xrLrY2oOlpU" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="booking">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <div class="thumbnail">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="title">
+                    <span>Booking</span>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <form class="form-horizontal">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                      <div class="panel">
+                        <div class="panel-heading">
+                          <h3 class="panel-title" aria-expanded="true">Booking Detail</h3>
+                        </div>
+                        <div class="panel-collapse in" role="tabpanel">
+                          <div class="panel-body">
+                            <div class="form-group">
+                              <label for="select-date" class="col-sm-4 control-label">Select your departure date:</label>
+                              <div class="col-sm-8">
+                                <select class="form-control" id="select-date">
+                                  <option>1 Nov 2017</option>
+                                  <option>23 Dec 2017</option>
+                                  <option>1 Jan 2017</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="traveller-quantity" class="col-sm-4 control-label">Number of travellers:</label>
+                              <div class="col-sm-8">
+                                <input type="number" class="form-control" id="traveller-quantity" min="1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                      <div class="panel">
+                        <div class="panel-heading">
+                          <h3 class="panel-title" aria-expanded="true">Lead Traveller details</h3>
+                        </div>
+                        <div class="panel-collapse in" role="tabpanel">
+                          <div class="panel-body">
+                            <div class="form-group">
+                              <label for="title" class="col-sm-4 control-label">Title:</label>
+                              <div class="col-sm-8">
+                                <select class="form-control" id="title">
+                                  <option>Mr.</option>
+                                  <option>Ms.</option>
+                                  <option>Mrs.</option>
+                                  <option>Miss.</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="first-name" class="col-sm-4 control-label">First Name:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="first-name" placeholder="Lisa">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="last-name" class="col-sm-4 control-label">Last Name:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="last-name" placeholder="Granger">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="email" class="col-sm-4 control-label">Email:</label>
+                              <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email" placeholder="xxx@example.com">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="phone" class="col-sm-4 control-label">Phone Number:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="phone">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                      <div class="panel">
+                        <div class="panel-heading">
+                          <h3 class="panel-title" aria-expanded="true">Payment Detail</h3>
+                        </div>
+                        <div class="panel-collapse in" role="tabpanel">
+                          <div class="panel-body">
+                            <div class="form-group">
+                              <label for="payment-method" class="col-sm-4 control-label">Select your Payment Method:</label>
+                              <div class="col-sm-8">
+                                <select class="form-control" id="payment-method">
+                                  <option>Visa</option>
+                                  <option>MasterCard</option>
+                                  <option>American Express</option>
+                                  <option>Paypal</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="cardholder-name" class="col-sm-4 control-label">Cardholder Name:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="cardholder-name" placeholder="i.e. Lisa Granger">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="card-number" class="col-sm-4 control-label">Card Number:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="card-number" placeholder="**** **** **** ****">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="expiry-date" class="col-sm-4 control-label">Expiry Date:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="expiry-date" placeholder="MM / YYYY">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="cvv" class="col-sm-4 control-label">CVV:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="cvv" placeholder="1234">
+                                <img src="images/booking/cvv.png" class="cvv-img">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="footer">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">Contact Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-phone"></i>
+                +855 (0) xx xxx xxx
+              </li>
+              <li>
+                <a href="mailto:example@example.com">
+                  <i class="fa fa-envelope"></i>
+                  example@example.com
+                </a>
+              </li>
+              <li class="address-li">
+                <i class="fa fa-home"></i>
+                Phnom Penh, Cambodia
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">About</h4>
+            <ul class="navigation">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut aliquip ex ea commodo consequat.
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4 class="title">More Info</h4>
+            <ul class="navigation">
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Terms and Conditions</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

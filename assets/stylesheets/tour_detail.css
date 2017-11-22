@@ -1,0 +1,253 @@
+html, body {
+  height: 100%;
+  padding-top: 0px;
+  position: relative;
+}
+
+nav.nav-menu {
+  margin-bottom: 0px;
+  z-index: 999;
+}
+
+.content-wrapper {
+  margin-top: 0px;
+}
+
+section#tour-introduction .title-with-banner {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+section#tour-introduction .title-with-banner img.img-banner {
+  min-height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+section#tour-introduction .title-with-banner .title {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+section#tour-introduction .title-with-banner .title span {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+section#tour-introduction .tour-introduction-row {
+  padding-top: 15px;
+}
+
+section#tour-introduction .tour-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+section#tour-introduction .tour-carousel .item {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section#tour-introduction .tour-carousel .item img {
+  max-width: none;
+  min-height: 350px;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+section#tour-introduction .package-cost {
+  padding-top: 10px;
+}
+
+section#tour-introduction .package-cost .cost-label {
+  font-size: 20px;
+}
+
+section#tour-introduction .cost-per-day {
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+section#tour-introduction .cost-per-day .package-days {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+section#tour-introduction .cost-per-day .package-per-day {
+  color: #ccc;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+section#tour-introduction .available-spaces {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+section#tour-introduction .view-detail {
+  margin-top: 5px;
+}
+
+section#tour-introduction .view-detail .btn-download {
+  margin-top: 5px;
+}
+
+section#tour-introduction .view-detail a {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  section#tour-introduction .tour-carousel .item img {
+    right: 0;
+    left: 0;
+  }
+
+  section#tour-introduction .view-detail a {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  section#tour-introduction .title {
+    text-align: center;
+  }
+  section#tour-introduction .tour-detail {
+    text-align: center;
+  }
+  section#tour-introduction .tour-detail .tour-detail-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+section#tour-menu {
+  padding-top: 10px;
+}
+
+section#tour-menu .floating-menu {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+section#tour-menu .floating-menu .fixed {
+  position: fixed;
+  background-color: #fff;
+  color: #333;
+  z-index: 999;
+}
+section#tour-menu .floating-menu .navbar {
+  border-radius: 0;
+}
+
+section#tour-menu .floating-menu .navbar ul > li > a {
+  background-color: #fff;
+  color: #337ab7;
+  font-size: 15px;
+}
+section#tour-menu .floating-menu .navbar ul > li > a span {
+  padding-bottom: 10px;
+}
+section#tour-menu .floating-menu .navbar ul > li > a:hover span,
+section#tour-menu .floating-menu .navbar ul > li.active > a span {
+  border-bottom: 1px solid #337ab7;
+}
+section#highlights .title {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+section#highlights .title span,
+section#itinery .title span,
+section#video .title span,
+section#booking .title span {
+  font-size: 18px;
+  font-weight: 600;
+}
+section#highlights span.highlight-note {
+  padding-left: 10px;
+}
+section#highlights ul.note-list li {
+  margin-bottom: 10px;
+}
+section#highlights hr {
+  border: 1px solid #cccccc;
+}
+section#highlights .tour-detail .tour-detail-header {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+}
+section#highlights .tour-detail .tour-detail-info {
+  font-size: 12px;
+}
+
+@media (max-width: 425px) {
+  section#highlights .title {
+    text-align: center;
+  }
+  section#highlights .tour-detail {
+    text-align: center;
+  }
+  section#highlights .tour-detail .tour-detail-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+section#itinery .introduction-panel {
+  padding-top: 10px;
+}
+
+section#itinery .introduction-panel .panel-heading .accordion-toggle:after,
+section#itinery .each-panel .panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e259";
+  float: right;
+  color: #333333;
+}
+
+section#itinery .introduction-panel .panel-heading .accordion-toggle.collapsed:after,
+section#itinery .each-panel .panel-heading .accordion-toggle.collapsed:after {
+  content: "\e258";
+}
+
+section#itinery .introduction-panel .accordion-toggle,
+section#itinery .each-panel .accordion-toggle {
+  cursor: pointer;
+}
+
+section#video iframe {
+  padding-top: 15px;
+}
+
+section#booking form .cvv-img {
+  width: 120px;
+}

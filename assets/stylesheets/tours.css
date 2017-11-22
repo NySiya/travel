@@ -1,0 +1,223 @@
+section#tour-packages .title-with-banner {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+section#tour-packages .title-with-banner img.img-banner {
+  min-height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+section#tour-packages .title-with-banner .title {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+section#tour-packages .title-with-banner .title span {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+section#tour-listing {
+  background: #f5f5f5;
+  padding-top: 30px;
+}
+
+section#tour-listing .filter {
+  height: 50px;
+  background-color: #e53935;
+  color: #fff;
+  position: relative;
+}
+
+section#tour-listing .filter span {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+section#tour-listing .departure-column {
+  padding-top: 15px;
+}
+
+section#tour-listing .departure-panel .panel-heading .accordion-toggle:after,
+section#tour-listing .duration-panel .panel-heading .accordion-toggle:after,
+section#tour-listing .country-panel .panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e259";
+  float: right;
+  color: #333333;
+}
+
+section#tour-listing .departure-panel .panel-heading .accordion-toggle.collapsed:after,
+section#tour-listing .duration-panel .panel-heading .accordion-toggle.collapsed:after,
+section#tour-listing .country-panel .panel-heading .accordion-toggle.collapsed:after {
+  content: "\e258";
+}
+
+section#tour-listing .departure-panel .accordion-toggle,
+section#tour-listing .duration-panel .accordion-toggle,
+section#tour-listing .country-panel .accordion-toggle {
+  cursor: pointer;
+}
+
+section#tour-listing .departure-panel ul li,
+section#tour-listing .country-panel ul li {
+  list-style-type: none;
+  line-height: 25px;
+}
+
+section#tour-listing .departure-panel ul li a,
+section#tour-listing .country-panel ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+section#tour-listing .departure-panel ul li a .tour-number,
+section#tour-listing .country-panel ul li a .tour-number {
+  color: #999999;
+}
+
+section#tour-listing .title {
+  padding-top: 15px;
+}
+
+section#tour-listing .tour-detail {
+  padding-bottom: 15px;
+}
+
+section#tour-listing .title a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e53935;
+  text-decoration: none;
+}
+
+section#tour-listing .comment {
+  line-height: 21px;
+  font-style: italic;
+  margin: 5px 0 5px 0;
+}
+
+section#tour-listing .tour-detail .tour-detail-header {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+section#tour-listing .tour-detail .tour-detail-info {
+  font-size: 12px;
+}
+
+section#tour-listing .tour-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+section#tour-listing .tour-carousel .item {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section#tour-listing .tour-carousel .item img {
+  max-width: none;
+  min-height: 250px;
+  min-width: 100%;
+  position: absolute;
+  right: -50%;
+  left: -50%;
+  top: -50%;
+  bottom: -50%;
+}
+
+section#tour-listing .package-cost {
+  padding-top: 10px;
+}
+
+section#tour-listing .package-cost .cost-label {
+  font-size: 20px;
+}
+
+section#tour-listing .cost-per-day {
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+section#tour-listing .cost-per-day .package-days {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+section#tour-listing .cost-per-day .package-per-day {
+  color: #ccc;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+section#tour-listing .available-spaces {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+section#tour-listing .view-detail {
+  margin-top: 5px;
+}
+
+section#tour-listing .view-detail .btn-download {
+  margin-top: 5px;
+}
+
+section#tour-listing .view-detail a {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  section#tour-listing .tour-carousel .item img {
+    right: 0;
+    left: 0;
+  }
+
+  section#tour-listing .view-detail a {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  section#tour-listing .title {
+    text-align: center;
+  }
+  section#tour-listing .tour-detail {
+    text-align: center;
+  }
+  section#tour-listing .tour-detail .tour-detail-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
